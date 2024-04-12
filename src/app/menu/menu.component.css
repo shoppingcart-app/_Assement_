@@ -1,0 +1,64 @@
+/* menu.component.css */
+
+.menu {
+  background-color: #333;
+}
+
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu-item {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+
+  .menu-item:last-child {
+    margin-right: 0;
+  }
+
+.menu-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+  .menu-link:hover {
+    background-color: #555;
+  }
+
+/* Submenu styles */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  list-style-type: none;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  display: block;
+}
+
+.submenu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+  .submenu a:hover {
+    background-color: #555;
+  }
